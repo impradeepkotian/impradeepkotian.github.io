@@ -1,2 +1,2 @@
-# www.pk.github.io
+# pk.github.io
 My personal website :p
