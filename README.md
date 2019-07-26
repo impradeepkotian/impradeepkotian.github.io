@@ -1,2 +1,2 @@
 # pradeepkotian.github.io
-My personal website :p
+My personal website :)
