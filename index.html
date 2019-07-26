@@ -1,398 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">    
+
 <head>
-<title>PraDeepKotian</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> 
-	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-			function hideURLbar(){ window.scrollTo(0,1); } 
-</script>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" /><!--gallery-popup-css-->
-<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /><!-- Pop-up -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--fonts-->
-<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<!--//fonts-->
-<!--favicon-->
-<link rel="icon" href="images/icon.jpg">
-<script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAIY7fXbUlOhGnvaWNHWrItXsOP4hKa9jo&callback=initMap"></script> 	
-<script type="text/javascript" src="js/map.js"></script>
-</head>
-<body>
-<!-- banner -->
-	<div class="banner" id="home" >
-			<div class="header">
-				<div class="w3_agile_logo">
-					<h1><a href="index.html">My Info<span>WHO IAM</span></a></h1>
-				</div>
-				<div class="w3_menu">
-					<div class="mobile-nav-button">
-						<div class="mobile-nav-button__line"></div>
-						<div class="mobile-nav-button__line"></div>
-						<div class="mobile-nav-button__line"></div>
-					</div>
-					<nav class="mobile-menu">
-						<ul>
-							<li><a href="#home" class="active scroll" >Home</a></li>							
-							<li><a href="#skills" class="scroll" >Skills</a></li>
-							<li><a href="#work" class="scroll" >Education</a></li>
-							<li><a href="#projects" class="scroll" >Projects</a></li>							
-							<li><a href="#contact" class="scroll" >Contact</a></li>
-						</ul>
-							<div class="clearfix"></div>
-						<div class="search-agileits">			
-							<form action="#" method="post">
-								<input type="search" name="Search" placeholder=" " required="">
-								<input type="submit" value="Search">
-							</form>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <!-- Page Title Here -->
+        <title>I'm PraDeep Kotian</title>
+		
+        <!-- Page Description Here -->
+		<meta name="description" content="pradeep kotian personal webiste">
+		<meta name="keywords" content="pradeep kotian">
+
+        <!-- Disable screen scaling-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        
+        <!-- Initializer -->
+        <link rel="stylesheet" href="css/normalize.css">        
+        
+        <!-- Web fonts and Web Icons -->
+        <link rel="stylesheet" href="css/pageloader.css">
+        <link rel="stylesheet" href="fonts/opensans/stylesheet.css">
+        <link rel="stylesheet" href="fonts/asap/stylesheet.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        
+        <!-- Vendor CSS style -->
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="js/vendor/jquery.fullPage.css">
+        <link rel="stylesheet" href="js/vegas/vegas.min.css">
+        
+		<!-- Main CSS files -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main_responsive.css">
+        <link rel="stylesheet" href="css/style-color1.css">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon" />  
+
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+				
+
+		<script>
+		function startTime() {
+		    var today = new Date();
+		    var h = today.getHours();
+		    var m = today.getMinutes();
+		    var s = today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    document.getElementsByClassName('hours')[0].innerHTML =h;
+		    document.getElementsByClassName('minutes')[0].innerHTML =m;
+		    document.getElementsByClassName('seconds')[0].innerHTML =s;
+		    var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+		    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		    return i;
+		}
+		</script>	
+
+		<style type="text/css">
+			body{
+				background: linear-gradient(120deg,#21dbaa 0,#21dbaa 4%,#00b4ef 34%,#01a7ec 41%,#0487e4 53%,#0768dd 62%,#5f1ae5 96%,#5f1ae5 100%);
+			}
+		</style>
+		
+    </head>
+    <body id="menu" class="alt-bg" onload="startTime()">       
+       
+        <!-- Page Loader -->
+        <div class="page-loader" id="page-loader">
+            <div><i class="ion ion-loading-d"></i><p>loading</p></div>
+        </div>
+      
+        <!-- BEGIN OF site header Menu -->
+		<!-- Add "material" class for a material design style -->
+		<header class="header-top">			
+            <div class="menu clearfix">
+                <a href="#about-us">about</a>					
+                <a href="#contact">contact</a>
+            </div>
+		</header>
+        <!-- END OF site header Menu-->
+        
+        <!-- BEGIN OF Quick nav icons at left -->
+		<nav class="quick-link count-4 nav-left">
+			<div class="logo">
+				<a href="#home">
+					<img src="img/icon.jpg" alt="Logo Brand" style="border-radius:20px;background:white;">
+				</a>
+			</div>
+			<ul id="qmenu" class="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home" class=""><i class="icon ion ion-home"></i>
+					</a>
+					<span class="title">Home</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#register"><i class="icon ion ion-compose"></i>
+					</a>
+					<span class="title">Stay in touch</span>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us"><i class="icon ion ion-android-information"></i>
+					</a>
+					<span class="title">About Me</span>
+				</li>				
+				<li data-menuanchor="contact">
+					<a href="#contact"><i class="icon ion ion-email"></i>
+					</a>
+					<span class="title">Contact</span>
+				</li>
+			</ul>
+		</nav>
+        <!-- END OF Quick nav icons at left -->
+        
+
+
+        <!-- BEGIN OF site cover -->
+        <div class="page-cover" id="s-cover">
+            <!-- Cover Background -->
+            <!--<div class="cover-bg pos-abs full-size bg-img" data-image-src="img/icon.jpg"></div>	-->  	        
+            <div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgb(59, 59, 59)" style="background-image: linear-gradient(-60deg,#21dbaa 0,#21dbaa 4%,#00b4ef 34%,#01a7ec 41%,#0487e4 53%,#0768dd 62%,#5f1ae5 96%,#5f1ae5 100%); "></div>	
+
+			<!-- Solid color as filter -->
+            <div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(0, 0, 0, 0.49)"></div>
+            
+        </div>
+        <!--END OF site Cover -->
+		
+		<!-- Begin of timer pane -->
+		<div class="pane-when " id="s-when">
+			<div class="content">
+				<!-- Clock -->
+				<div class="clock clock-countdown">
+					<div class="site-config"
+						 data-date="01/15/1995 00:00:00" 
+						 data-date-timezone="+0"
+						 ></div>					
+					<div class="elem-center">
+						<div class="digit">
+							<span class="days">00</span>
+							<span class="txt">days</span>
 						</div>
-					</nav>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="agile_banner_info">
-			<h2><span>HI! I'm</span> PraDeep Kotian</h2>
-				<div id="typed-strings" class="agileits_w3layouts_strings">
-						<p><i>Web Designer.</i></p>
-						<p><i>Web Developer.</i></p>
-						<p><i>Network &amp; Security Learner</i></p>
-						<p><i>Making future in Machine Learning.</i></p>
-					</div>
-				<span id="typed" style="white-space:pre;"></span>
-				<p class="banner-p-w3ls">IT engineer from <a href="https://tcetmumbai.in/"><strong>Thakur College Of Engineering And Technology</strong> </a>college, Mumbai, India</p>
-			</div>
-			<div class="w3_agileits_social_media">
-				<ul>
-					<li><a href="https://in.linkedin.com/in/pradeep-kotian-712aba112" class="wthree_facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a href="https://twitter.com/pradeepkotian71" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="https://github.com/PraDeepKotian" class="wthree_dribbble"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.instagram.com/impradeepkotian/?hl=en" class="wthree_behance"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-			<div class="banner-image-w3layouts">
-				<img src="images/mypic.jpg" alt="my-profile" class="img-responsive" />
-			</div>
-	</div>
-<!-- //banner -->
-<div class="clearfix"> </div>	
-<!--skills -->
-<div class="skills-agileinfo" id="skills">
-	<div class="container">
-		<h3 class="w3_head w3_head1 white-agile">My Skills <span>My special expertise</span></h3>
-				<div class="modal-spa">
-					<div class="skills"> 
-						<div class="col-md-6 bar-grids bargrids-left">
-							<h4><span class="glyphicon glyphicon-cog"></span> Technical Skills </h4>
-							<h6>web design  <span> 80% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 80%">
-								</div>
-							</div>
-							<h6>Java <span> 70% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 70%">
-								</div>
-							</div>
-							<h6>Javascript<span>70% </span></h6>
-							<div class="progress  w3-agile">
-								<div class="progress-bar progress-bar-striped active" style="width: 70%">
-								</div>
-							</div>							
-						</div> 
-						<div class="col-md-6 bar-grids  w3-agile">
-							<h4><span class="glyphicon glyphicon-briefcase"></span> Professional Skills </h4>
-							<h6>Communication<span> 85% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 85%">
-								</div>
-							</div>							
-							<h6>Leadership<span>90% </span></h6>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" style="width: 90%">
-								</div>
-							</div>
-							<h6>Confidence<span>86% </span></h6>
-							<div class="progress prgs-w3agile-last">
-								<div class="progress-bar progress-bar-striped active" style="width: 86%">
-								</div>
-							</div> 
-						</div>
-						<div class="clearfix"> </div>	
+					</div>					
+					
+					<div class="elem-bottom">
+						<div class="deco"></div>
+						<span class="hours">04</span><span class="thin">H</span>
+						<span class="minutes">00</span><span class="thin">MN</span>
+						<span class="seconds">04</span><span class="thin">S</span>						
 					</div>
 				</div> 
-		</div> 
-</div> 
-<!-- //skills -->
-<!-- experiences -->
 
-<div class="work" id="work">
-	<div class="container">
-		<h3 class="w3_head w3_head1">Education <span>More about my past</span></h3>
-		<h5 class="work2">Education </h5>
-		<div class="work-info-agileits">
-			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2015-present</h6>
-			</div>
-			<div class="col-md-8 work-right-w3-agileits">
-				<h3>Thakur College of Engineering and Technology</h3>
-				<p>Pursuing Bachelor of Engineering(BE) course in Information Technology(IT)</p>
-			</div>
-			<div class="clearfix"> </div>	
+				<footer>
+					<p>“One love, one heart. Let’s get together and feel all right”<strong> -Bob Marley</strong></p>
+				</footer>                
+			</div> 
 		</div>
-		<div class="work-info-agileits">
-			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 2012-2015</h6>
-			</div>
-			<div class="col-md-8 work-right-w3-agileits">
-				<h3>Pravin Patil College of Diploma Engineering & Technology</h3>
-				<p>Completed Diploma course in Information Technology(IT)</p>
-			</div>
-			<div class="clearfix"> </div>	
-		</div>
-		<div class="work-info-agileits">
-			<div class="col-md-4 work-left-agileits-w3layouts">
-				<h6><i class="fa fa-calendar-check-o" aria-hidden="true"></i> March 2012</h6>
-			</div>
-			<div class="col-md-8 work-right-w3-agileits">
-				<h3>The Saraswati Vidyalaya</h3>
-				<p>Completed Schoool</p>
-			</div>
-			<div class="clearfix"> </div>	
-		</div>
-    </div>
-</div>	
-<!-- //experiences -->
-<!-- services -->
-	<div class="services" id="projects">
-		<div class="container">
-			<h3 class="w3_head w3_head1">My Projects</h3>
-		</div>
-		<div class="agileits_services_grids_bottom">
-			<div class="container">
-				<div class="col-md-4 agileits_service_grid_btm_left">
-					<div class="agileits_service_grid_btm_left1">
-						<div class="agileits_service_grid_btm_left2">
-							<i class="fa fa-desktop" aria-hidden="true"></i>
-							<h5>MumbaiDarshan</h5>
-							<p>A web application using php, which lets tourism for navigating the Mumbai region and top attraction places</p>
-						</div>
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
-					</div>
+		<!-- End of timer pane -->
+        
+        <!-- BEGIN OF site main content content here -->
+        <main class="page-main" id="mainpage">             
+            
+			<!-- Begin of home page -->
+			<div class="section page-home page page-cent" id="s-home">
+				
+				<!-- Logo -->
+				<div class="logo-container">
+					<img class="h-logo" src="img/logo.png" alt="Logo" style="border-radius:20px;background:white;">
 				</div>
-				<div class="col-md-4 agileits_service_grid_btm_left">
-					<div class="agileits_service_grid_btm_left1">
-						<div class="agileits_service_grid_btm_left2">
-							<i class="fa fa-camera-retro" aria-hidden="true"></i>
-							<h5>QuickDocs</h5>
-							<p>It’s a web application using php, which allow user to maintain his/her personal documents in a secure platform</p>
+				<!-- Content -->
+				<section class="content">
+					
+					<header class="header">
+						<div class="h-left">
+							<h2>I'm PraDeep Kotian</h2>
 						</div>
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-4 agileits_service_grid_btm_left">
-					<div class="agileits_service_grid_btm_left1">
-						<div class="agileits_service_grid_btm_left2">
-							<i class="fa fa-android" aria-hidden="true"></i>
-							<h5>SocieoMobiApp</h5>
-							<p>It's social android app allows maintaining a good maintenance, relationship, aware about the people living in same society, etc</p>
+						<div class="h-right">
+							<h3>Analyst AT<br><a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkle Company</a></h3>												
 						</div>
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+					</header>
+				</section>
+				
+				<!-- Scroll down button -->
+                <footer class="p-footer p-scrolldown">
+                    <a href="#register">
+                        <div class="arrow-d">							
+							<div class="after">Education</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
 			</div>
-		</div>
-	</div>
-<!-- //services -->
+			<!-- End of home page -->
+            
+           
+            
+            <!-- Begin of register page -->
+            <div class="section page-register page page-cent"  id="s-register">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>Education <i class="ion ion-compose"></i></h3> 
+						<h4 class="subhead">Bachelor of Engineering(B.E) in Information Technology(IT) from University of Mumbai 2018</h4>
+						<h4 class="subhead">Diploma in Information Technology(IT) from M.S.B.T.E. Mumbai 2015</h4>
+						<h4 class="subhead">Schooling from Maharashtra State Board of Secondary and Higher Secondary Education (S.S.C) 2012</h4>
+                    </header>                    
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#about-us">
+                        <div class="arrow-d">
+							<div class="before">Home</div>
+							<div class="after">About</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of register page -->
+            
+            <!-- Begin of about us page -->
+            <div class="section page-about page page-cent" id="s-about-us">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>About PraDeep<i class="ion ion-android-information">
+                            </i>
+                        </h3>
+						<h4 class="subhead">A Survey programmer and Data Visualizer on platform <a href="https://www.qualtrics.com" target="_blank">Qualtixcs(XM)</a> from Mumbai, India with a focus on understanding client research and helping the client in building a survey, distributions and managing field. Also helping in identifying, analyse and interpret trends or patterns in data sets to visualize in dashboard.</h4>
+                    </header>
+                    
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#contact">
+                        <div class="arrow-d">
+							<div class="before">Register</div>
+							<div class="after">Message</div>
+							<div class="circle"><i class="ion ion-mouse"></i></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- End of about us page -->
+                
+            <!-- Begin of Contact page   -->
+            <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+				<!-- Begin of contact information -->
+				<div class="slide" id="s-information" data-anchor="information">
+					<section class="content">
+						<header class="p-title">
+							<h3>Contact<i class="ion ion-location">
+								</i>
+							</h3>
+							<h4 class="subhead">Let's get in touch. Messages work best.</h4>							
+						</header>
+						<!-- Begin Of Page SubSction -->
+						<div class="contact">
+							<div >
+								<div class="columns social-links left">
+									<ul>									
+										<li  class="show-for-medium-up">
+											<h4>Find me on</h4>
+											<!-- Begin of Social links -->
+											<div class="socialnet">
+												<a href="https://www.linkedin.com/in/pradeep-kotian" target="_blank"><i class="ion icon ion-social-linkedin"></i></a>
+												<a href="https://github.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-github"></i></a>
+												<a href="https://www.instagram.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-instagram"></i></a>
+												<a href="https://twitter.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-twitter"></i></a>	
+											</div>
+											<!-- End of Social links -->
+										</li>
+										<br>
+										<li>
+											<p><img src="img/icon.jpg" alt="Logo" class="logo" style="border-radius:5px;"></p>
+											<p class="small">All right reserved 2019</p>
+										</li>
+									</ul>
 
-<!--footer-->
-<div class="contact" id="contact">
-	<h3 class="w3_head w3_head1">Contact Me <span>Get in touch with me</span></h3>
-		<div class="col-md-5 contact-agileits-w3layouts">
-		<form action="#" method="post">
-				<input type="text" name="Your Name" placeholder="Name" required="">
-				<input type="email" name="Your Email" placeholder="Email" required="">
-				<input type="text" name="Phone Number" placeholder="Number" required="">
-				<textarea name="Message" placeholder="Message" required=""></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of page SubSection -->
+					</section>  
+				</div>
+				<!-- end of contact information -->
+				
+			
+            </div>
+            <!-- End of Contact page  -->   
+        
+        </main>
 
+        <!-- END OF site main content content here -->  
+		
+		<!-- Begin of site footer -->
+		<footer class="page-footer">
+			<div>
+				
+				<a href="https://www.linkedin.com/in/pradeep-kotian" target="_blank"><i class="ion icon ion-social-linkedin"></i></a>
+				<a href="https://github.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-github"></i></a>
+				<a href="https://www.instagram.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-instagram"></i></a>
+				<a href="https://twitter.com/impradeepkotian" target="_blank"><i class="ion icon ion-social-twitter"></i></a>				
+				
+			</div>
+		</footer>
+		<!-- End of site footer -->        
 
-		<div class="col-md-7 contact-map-right">
-		 <div id="mapCanvas" style = "width:100%; height:400px;"></div>
+        
+        <!-- All Javascript plugins goes here -->
+		<!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<!-- All vendor scripts -->
+        <script src="js/vendor/all.js"></script>	
+		
+		<!-- Downcount JS -->
+        <script src="js/jquery.downCount.js"></script>
+		
+		<!-- Form script -->
+        <script src="js/form_script.js"></script>
+        
+		<!-- Javascript main files -->
+        <script src="js/main.js"></script>   
 
-		</div>
-			<div class="clearfix"></div>
-</div>
-<div class="contact-info">
- <div class="container">
-	<div class="col-md-4 contact-grids">
-		<h5>Find me</h5>
-		<div class="w3_agileits_social_media-footer">
-			<ul>
-				<li><a href="https://in.linkedin.com/in/pradeep-kotian-712aba112" class="wthree_facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li><a href="https://twitter.com/pradeepkotian71" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="https://github.com/PraDeepKotian" class="wthree_dribbble"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-				<li><a href="https://www.instagram.com/impradeepkotian/?hl=en" class="wthree_behance"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="col-md-4 contact-grids contact-mid">
-		<h5>Contact Info</h5>
-		<ul>			
-			<li><i class="fa fa-map-marker" aria-hidden="true"></i>Mumbai, India</li>
-			<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:info@example.com">pradeepkotian1995@gmail.com</a></li>
-		</ul>
-	</div>	
-	<div class="clearfix"></div>
-</div>
-</div>
-<div class="copy-w3-agile">
-	<p>Copyright 2017 PraDeepKotian. All Rights Reserved | Design By <a href="http://w3layouts.com/">W3layouts</a></p>	
-</div>
-<!--//footer-->	
+        <!-- Javascript for number of days-->
+        <script type="text/javascript">			
+			var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+			var firstDate = new Date(1995,01,15);
+			var today = new Date();
+			var secondDate = new Date(today.getFullYear(),today.getMonth()+1,today.getDate());	
+			var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+			document.getElementsByClassName("days")[0].innerHTML =diffDays;
+		</script>   	
 
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    </body>
 
-<!-- Navigation-JavaScript -->
-<!-- menu -->
-<script>
-	$(document).ready(function () {
-	  $('.mobile-nav-button').on('click', function() {
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
-	  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
-	  
-	  $('.mobile-menu').toggleClass('mobile-menu--open');
-	  return false;
-	}); 
-	});
-</script>
-<!-- //menu -->
-<!-- Gallery-plugin -->
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/jquery.cm-overlay.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('.cm-overlay').cmOverlay();
-			});
-		</script>
-<!-- //Gallery-plugin -->
-<!-- responsiveslides -->
-<script src="js/responsiveslides.min.js"></script>
-			<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									 // Slideshow 4
-									$("#slider3").responsiveSlides({
-										auto: true,
-										pager: false,
-										nav: true,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-									$('.events').append("<li>before event fired.</li>");
-									},
-									after: function () {
-										$('.events').append("<li>after event fired.</li>");
-										}
-										});
-										});
-			</script>
-<!-- //responsiveslides -->
-
-	<!-- //Navigation-JavaScript -->
-<!--pop-up-box -->
-					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-					<script>
-					$(document).ready(function() {
-					$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-					});
-
-					});
-					</script>
-<!-- //pop-up-box -->
-
-<!-- banner-type-text -->
-	<script src="js/typed.js" type="text/javascript"></script>
-    <script>
-		$(function(){
-
-			$("#typed").typed({
-				// strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-				stringsElement: $('#typed-strings'),
-				typeSpeed: 30,
-				backDelay: 500,
-				loop: false,
-				contentType: 'html', // or text
-				// defaults to false for infinite loop
-				loopCount: false,
-				callback: function(){ foo(); },
-				resetCallback: function() { newTyped(); }
-			});
-
-			$(".reset").click(function(){
-				$("#typed").typed('reset');
-			});
-
-		});
-
-		function newTyped(){ /* A new typed object */ }
-
-		function foo(){ console.log("Callback"); }
-    </script>
-<!-- //banner-type-text -->
-<!-- jarallax-js -->
-			<script src="js/SmoothScroll.min.js"></script>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-	<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	
-	<div class="arr-w3ls">
-	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
-<!-- //smooth scrolling -->
-
-
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-
-</body>
 </html>
