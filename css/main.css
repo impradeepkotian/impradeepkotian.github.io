@@ -1408,7 +1408,7 @@ strong,
     font-family: 'Opensans';
 }
 /* 6.5 Registration form */
-.page-education .content{
+.page-registr .content{
 /*    margin-top: -4rem;*/
 /*
     padding-left: 1em;
@@ -1416,7 +1416,7 @@ strong,
 */
 /*    padding-top: 0.2rem;*/
 }
-.page-education .form{  
+.page-registr .form{  
 	max-width: 480px;
 }
 .page .form{  
