@@ -136,7 +136,7 @@ $(document).ready(function() {
 	/** Init fullpage.js */
     $('#mainpage').fullpage({
 		menu: '#qmenu',
-		anchors: ['home',  'registr', 'about-us', 'contact'],
+		anchors: ['home',  'education', 'about-us', 'contact'],
 //        verticalCentered: false,
 //        resize : false,
 //		responsive: 900,
@@ -166,7 +166,7 @@ $(document).ready(function() {
 
 // Email validation text, uncomment below to use them
 /*
-// Email registration 
+// Email education
 var email_reg_elem = document.getElementById("reg-email");
 email_reg_elem.oninvalid = function(e) {
 	e.target.setCustomValidity("");
